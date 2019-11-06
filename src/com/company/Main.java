@@ -11,16 +11,16 @@ final class Main {
         private static final int CONST_VALUE_READ1 = 5;
         /**
          * Вторая константта проверки.
-        */
+         */
         private static final int CONST_VALUE_READ2 = 15;
         /**
          * Делитель-константта.
          */
         private static final int CONST_VALUE1 = 15;
 
-    private Main() {
+        private Main() {
 
-    }
+        }
 
         public static void main(final String[] args) {
                 Functional operation1 = (x) -> x % CONST_VALUE1 == 0;
@@ -41,9 +41,7 @@ final class Main {
                                         q = true;
                                 }
                         }
-                        if (q) {
-                                return false;
-                        } else {return true;}
+                        return !q;
                 };
 
 
