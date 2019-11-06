@@ -41,7 +41,9 @@ final class Main {
                                         q = true;
                                 }
                         }
-                        return q;
+                        if (q) {
+                                return false;
+                        } else {return true;}
                 };
 
 
